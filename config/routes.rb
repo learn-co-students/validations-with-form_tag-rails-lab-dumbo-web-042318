@@ -53,4 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  resources :authors, except: [:index, :destroy]
+  resources :posts, except: [:index, :destroy]
 end
